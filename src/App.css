@@ -24,6 +24,22 @@ button:hover {
   font-weight: bold;
 }
 
+input {
+  padding: 1vh 1vw;
+  width: 50vw;
+  height: 2.5vh;
+  margin: 5vh 5vw;
+  font-size: calc(10px + 2vmin);
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  width: 100%;
+}
+
 /* On screens that are 992px or less */
 @media screen and (max-width: 992px) {
 

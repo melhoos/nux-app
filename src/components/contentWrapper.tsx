@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import ConferenceWrapper from './conferenceWrapper';
 import {PageContext, PageName} from '../providers/pageProvider';
 
 const renderContent = (pageName: PageName) => {
@@ -7,6 +8,8 @@ const renderContent = (pageName: PageName) => {
             return (<>HOME</>);
         case PageName.About:
             return (<>ABOUT</>);
+        case PageName.Conferences:
+            return (<ConferenceWrapper/>)
         default:
             return (<></>)
     }
