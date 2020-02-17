@@ -24,7 +24,7 @@ const ConferenceList = (props: Props) => {
                         <th> Name </th>
                         <th> Start Date </th>
                         <th> End Date </th>
-                        <th> Tags </th>
+                        <th className="hide-on-mobile"> Tags </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,7 +33,7 @@ const ConferenceList = (props: Props) => {
                         <td className="conference-name">{c.name}</td>
                         <td>{formatDate(c.startDate)}</td>
                         <td>{formatDate(c.endDate)}</td>
-                        <td>{formatTags(c.tags)}</td>
+                        <td className="hide-on-mobile">{formatTags(c.tags)}</td>
                     </tr>))}
                 </tbody>
             </table>

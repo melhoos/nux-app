@@ -1,9 +1,9 @@
 import React, {ReactNode, useState} from 'react';
 
 enum PageName {
-    Home,
-    About,
-    Conferences
+    Home = 'HOME',
+    About = 'ABOUT',
+    Conferences = 'CONFERENCES'
 }
 
 const initPage = PageName.Home
