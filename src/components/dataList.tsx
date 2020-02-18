@@ -43,9 +43,7 @@ const DataList = (props: Props) => {
                 <tbody>
                     {data.map((d: Data, i: number) => (
                         <tr key={i}> 
-                            { tableHeaders.map((th: string, i:number) => {
-                            return (<td key={i}>{formatValue(d, th)} </td>)
-                            })}
+                            { tableHeaders.map((th: string, i:number) => (<td key={i}>{formatValue(d, th)} </td>) )}
                         </tr>
                     ))}
                 </tbody>
