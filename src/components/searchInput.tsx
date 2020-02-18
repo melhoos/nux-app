@@ -10,11 +10,11 @@ function SearchInput(props: Props) {
     const {data, filteredData} = props;
 
     const filter = (event: React.FormEvent<HTMLInputElement>) => {
-        const input = event.currentTarget.value.toLowerCase();
-        const splittedInput = input.split(" ").filter(i => i);
+        const input = event.currentTarget.value.toLowerCase()
+        const splittedInput = input.split(" ").filter(i => i)
 
         const filtered = data.filter( (c: Data) => {
-            const stringify = JSON.stringify(c).toLowerCase();
+            const stringify = JSON.stringify(c).toLowerCase()
             return splittedInput.every((word: string) => {
                 return stringify.includes(word)
             })
@@ -27,4 +27,4 @@ function SearchInput(props: Props) {
     )
 }
 
-export default SearchInput;
+export default SearchInput

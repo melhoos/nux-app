@@ -16,7 +16,7 @@ function mappedPodcasts(podcasts: Podcast[]): Data[] {
 }
 
 function PodcastWrapper() {
-    const [podcasts, setPodcasts] = useState(mappedPodcasts(podcastData));
+    const [podcasts, setPodcasts] = useState(mappedPodcasts(podcastData))
     return (
         <>
             <SearchInput data={podcastData} filteredData={(c) => setPodcasts(c) } />

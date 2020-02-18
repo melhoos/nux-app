@@ -9,7 +9,7 @@ enum PageName {
 
 const initPage = PageName.Home
 
-const PageContext = React.createContext<[PageName, Function]>([initPage, () => {}]);
+const PageContext = React.createContext<[PageName, Function]>([initPage, () => {}])
 
 interface Props {
     children: ReactNode
@@ -24,4 +24,4 @@ const PageProvider = (props: Props) => {
     )
 }
 
-export { PageContext, PageProvider, PageName };
+export { PageContext, PageProvider, PageName }

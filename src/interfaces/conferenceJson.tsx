@@ -9,4 +9,4 @@ interface ConferenceJson {
     description: string
 }
 
-export default ConferenceJson;
+export default ConferenceJson

@@ -6,9 +6,9 @@ import {PageContext, PageName} from '../providers/pageProvider';
 const renderContent = (pageName: PageName) => {
     switch(pageName) {
         case PageName.Home:
-            return (<>HOME</>);
+            return (<>HOME</>)
         case PageName.About:
-            return (<>ABOUT</>);
+            return (<>ABOUT</>)
         case PageName.Conferences:
             return (<ConferenceWrapper/>)
         case PageName.Podcasts:
@@ -19,8 +19,8 @@ const renderContent = (pageName: PageName) => {
 } 
 
 const ContentWrapper = () => {
-    const [pageName, setPageName] = useContext(PageContext);
+    const [pageName, setPageName] = useContext(PageContext)
     return renderContent(pageName)
 }
 
-export default ContentWrapper;
+export default ContentWrapper

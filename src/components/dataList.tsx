@@ -7,32 +7,28 @@ interface Props {
 }
 
 function formatArray(tags: string[]): ReactElement {
-    return ( <> {tags.map( (tag: string, i:number) => (<span key={i} className="tag"> {tag} </span>))} </> )
+    return (<>{tags.map( (tag: string, i:number) => (<span key={i} className="tag"> {tag} </span>))}</>)
 }
 
 function formatDate(d: Date): string {
     const months = ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Des']
-    return `${d.getDate()}.${months[d.getMonth()]}`;
+    return `${d.getDate()}.${months[d.getMonth()]}`
 }
 
 function formatTableHeader(tableHeader: string): string {
-    return tableHeader.split(/(?=[A-Z])/).join(" ");
+    return tableHeader.split(/(?=[A-Z])/).join(" ")
 }
 
 function formatValue(d: Data, key: string): ReactElement {
-    let value = (d as any)[key];
-    if (value instanceof Date) {
-        return (<> {formatDate(value)} </> )
-    } else if (value instanceof Array) {
-        return formatArray(value)
-    } else {
-        return (<> {value} </>)
-    }
+    const value = (d as any)[key]
+    if (value instanceof Date) return (<>{formatDate(value)}</>)
+    else if (value instanceof Array) return formatArray(value)
+    else return (<>{value}</>)
 }
 
 const DataList = (props: Props) => {
-    const {data, tableHeaders} = props;
-    const numOfColsOnMob = 2;
+    const {data, tableHeaders} = props
+    const numOfColsOnMob = 2
     return (
         <div className="table-wrapper">
             <table>
@@ -57,4 +53,4 @@ const DataList = (props: Props) => {
     )
 }
 
-export default DataList;
+export default DataList

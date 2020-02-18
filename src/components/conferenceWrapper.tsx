@@ -17,7 +17,7 @@ function tableHeaders(): string[] { // todo: add "hide-on-mobile" value for each
 
 function ConferenceWrapper() {
     const mappedConferences = conferenceMapper(conferenceData)
-    const [conferances, setConferances] = useState(mappedConferences);
+    const [conferances, setConferances] = useState(mappedConferences)
     return (
         <>
             <SearchInput data={mappedConferences} filteredData={(c) => setConferances(c) } />

@@ -1,6 +1,6 @@
 import Conference from '../interfaces/conference';
 import Podcast from '../interfaces/podcast';
 
-type Data = Conference | Podcast;
+type Data = Conference | Podcast
 
-export default Data;
+export default Data

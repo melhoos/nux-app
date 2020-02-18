@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {PageContext, PageName} from '../providers/pageProvider';
 
 const Menu = () => {
-    const [pageName, setPageName] = useContext(PageContext);
+    const [pageName, setPageName] = useContext(PageContext)
     return (
         <header className="App-header">
             <button onClick={() => setPageName(PageName.Home)}> {PageName.Home}  </button>
@@ -13,4 +13,4 @@ const Menu = () => {
     )
 }
 
-export default Menu;
+export default Menu
