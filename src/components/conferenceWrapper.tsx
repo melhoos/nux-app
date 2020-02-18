@@ -11,7 +11,7 @@ function conferenceMapper(conferenceJson: ConferenceJson[]): Data[] {
     })
 }
 
-function tableHeaders(): string[] {
+function tableHeaders(): string[] { // todo: add "hide-on-mobile" value for each table header
     return ['name', 'startDate', 'endDate', 'tags']
 }
 

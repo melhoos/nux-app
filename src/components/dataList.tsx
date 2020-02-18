@@ -32,18 +32,23 @@ function formatValue(d: Data, key: string): ReactElement {
 
 const DataList = (props: Props) => {
     const {data, tableHeaders} = props;
+    const numOfColsOnMob = 2;
     return (
         <div className="table-wrapper">
             <table>
                 <thead> 
                     <tr> 
-                        { tableHeaders.map( (th:string, i:number) => ( <th key={i}>{formatTableHeader(th)}</th> ))} 
+                        { tableHeaders.map( (th:string, i:number) => ( 
+                            <th key={i} className={(i>numOfColsOnMob) ? "hide-on-mobile" : ""}>{formatTableHeader(th)}</th> 
+                        ))} 
                     </tr> 
                 </thead>
                 <tbody>
                     {data.map((d: Data, i: number) => (
                         <tr key={i}> 
-                            { tableHeaders.map((th: string, i:number) => (<td key={i}>{formatValue(d, th)} </td>) )}
+                            { tableHeaders.map((th: string, i:number) => (
+                                <td key={i} className={(i>numOfColsOnMob) ? "hide-on-mobile" : ""}>{formatValue(d, th)} </td>
+                            ))}
                         </tr>
                     ))}
                 </tbody>
