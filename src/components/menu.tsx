@@ -8,6 +8,7 @@ const Menu = () => {
             <button onClick={() => setPageName(PageName.Home)}> {PageName.Home}  </button>
             <button onClick={() => setPageName(PageName.About)}> {PageName.About} </button>
             <button onClick={() => setPageName(PageName.Conferences)}> {PageName.Conferences} </button>
+            <button onClick={() => setPageName(PageName.Podcasts)}> {PageName.Podcasts} </button>
         </header>
     )
 }

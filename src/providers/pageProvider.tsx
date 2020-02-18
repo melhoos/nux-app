@@ -3,7 +3,8 @@ import React, {ReactNode, useState} from 'react';
 enum PageName {
     Home = 'HOME',
     About = 'ABOUT',
-    Conferences = 'CONFERENCES'
+    Conferences = 'CONFERENCES',
+    Podcasts = 'PODCASTS'
 }
 
 const initPage = PageName.Home

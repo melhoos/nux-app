@@ -1,15 +1,27 @@
 import React, {useState} from 'react';
-import ConferenceList from './conferenceList';
+import DataList from './dataList';
 import conferenceData from '../data/conferences.json';
 import SearchInput from './searchInput';
+import ConferenceJson from '../interfaces/conferenceJson';
+import Data from '../types/data';
+
+function conferenceMapper(conferenceJson: ConferenceJson[]): Data[] {
+    return conferenceJson.map( (conferenceJ) => {
+        return {...conferenceJ, startDate: new Date(conferenceJ.startDate), endDate: new Date(conferenceJ.endDate)}
+    })
+}
+
+function tableHeaders(): string[] {
+    return ['name', 'startDate', 'endDate', 'tags']
+}
 
 function ConferenceWrapper() {
-    const [conferances, setConferances] = useState(conferenceData);
-
+    const mappedConferences = conferenceMapper(conferenceData)
+    const [conferances, setConferances] = useState(mappedConferences);
     return (
         <>
-            <SearchInput  conferences={conferenceData} filteredConferences={(c) => setConferances(c) } />
-            <ConferenceList conferences={conferances}/>
+            <SearchInput data={mappedConferences} filteredData={(c) => setConferances(c) } />
+            <DataList data={conferances} tableHeaders={tableHeaders()}/>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import ConferenceWrapper from './conferenceWrapper';
+import PodcastWrapper from './podcastWrapper';
 import {PageContext, PageName} from '../providers/pageProvider';
 
 const renderContent = (pageName: PageName) => {
@@ -10,6 +11,8 @@ const renderContent = (pageName: PageName) => {
             return (<>ABOUT</>);
         case PageName.Conferences:
             return (<ConferenceWrapper/>)
+        case PageName.Podcasts:
+            return (<PodcastWrapper/>)
         default:
             return (<></>)
     }

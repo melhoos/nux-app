@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "podcastName": "pod1",
+        "episodeName": "episode1",
+        "tags": ["tag1", "tag2"]
+    },
+    {
+        "id": 2,
+        "podcastName": "podcastName ABC",
+        "episodeName": "episode10",
+        "tags": ["tagA", "tagB"]
+    }
+]
