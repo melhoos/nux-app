@@ -1,13 +1,15 @@
 import React from 'react';
 import Data from '../types/data';
+import '../styles/searchInput.scss';
 
 interface Props {
     data: Data[],
+    label?: string,
     filteredData: (data: Data[]) => void
 }
 
 function SearchInput(props: Props) {
-    const {data, filteredData} = props;
+    const {data, label, filteredData} = props;
 
     const filter = (event: React.FormEvent<HTMLInputElement>) => {
         const input = event.currentTarget.value.toLowerCase()
@@ -23,7 +25,10 @@ function SearchInput(props: Props) {
     }
 
     return (
-        <input type="text" name="search-input" onKeyUp={filter} />
+        <div className="searchInput">
+            <label>{label}</label>
+            <input type="text" placeholder="Søk..." name="search-input" onKeyUp={filter} />
+        </div>
     )
 }
 

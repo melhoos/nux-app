@@ -1,5 +1,11 @@
 # Docker
 
+## Docker build vs. image vs. container
+`Docker build ` is the command to create a `docker image`. A `docker container` is a running version of your `docker image`.
+
+## Docker Hub vs. Docker repository
+`Docker Hub` is a service provided by Docker for finding and sharing container images with your team. `The Docker Hub` contains `repositories`. Each `repository` can contain one or multiple container images. You are able to push and pull container images from `repositories`.
+
 ## Dockerfile
 A `Dockerfile` is a text document that contains all the commands a user could call on the command line to assemble an image.
 

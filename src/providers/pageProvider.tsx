@@ -1,22 +1,26 @@
 import React, {ReactNode, useState} from 'react';
 
-enum PageName {
-    Home = 'HOME',
-    About = 'ABOUT',
-    Conferences = 'CONFERENCES',
-    Podcasts = 'PODCASTS'
+enum Pages {
+    //Home = 'HOME',
+    About = 'OM NUX',
+    Buzzword = 'BUZZWORD',
+    Courses = 'KURS',
+    Project = 'PROSJEKT',
+    Inspiration = 'INSPIRASJON',
+    // Conferences = 'CONFERENCES',
+    // Podcasts = 'PODCASTS'
 }
 
-const initPage = PageName.Home
+const initPage = Pages.About
 
-const PageContext = React.createContext<[PageName, Function]>([initPage, () => {}])
+const PageContext = React.createContext<[Pages, Function]>([initPage, () => {}])
 
 interface Props {
     children: ReactNode
 }
 
 const PageProvider = (props: Props) => {
-    const [state, setState] = useState<PageName>(PageName.Home);
+    const [state, setState] = useState<Pages>(Pages.About);
     return (
         <PageContext.Provider value={[state, setState]}>
             {props.children}
@@ -24,4 +28,4 @@ const PageProvider = (props: Props) => {
     )
 }
 
-export { PageContext, PageProvider, PageName }
+export { PageContext, PageProvider, Pages }

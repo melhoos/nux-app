@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+.Menu {
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      @extend .button
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .Menu {
+      flex-direction: column;
+    }
+  }

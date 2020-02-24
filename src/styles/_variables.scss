@@ -1,0 +1,27 @@
+$mainColor: #DF5453;
+
+.button {
+    background: none;
+    border: none;
+    margin: 0 1vw;
+    color: $mainColor;
+
+    &.selected {
+      font-weight: bold;
+    }
+
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+}
+
+.paragraphs {
+    margin: 1em 10vw;
+    line-height: 1.5em;
+    text-align: start;
+    span {
+        font-weight: bold;
+        color: $mainColor;
+    }
+}
