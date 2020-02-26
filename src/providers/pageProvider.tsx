@@ -4,7 +4,7 @@ enum Pages {
     //Home = 'HOME',
     About = 'OM NUX',
     Buzzword = 'BUZZWORD',
-    Courses = 'KURS',
+    Conference = 'KURS',
     Project = 'PROSJEKT',
     Inspiration = 'INSPIRASJON',
     // Conferences = 'CONFERENCES',

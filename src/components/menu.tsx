@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import '../styles/menu.scss';
 import {PageContext, Pages} from '../providers/pageProvider';
+import '../styles/menu.scss';
 
 const Menu = () => {
     const [pageName, setPageName] = useContext(PageContext)

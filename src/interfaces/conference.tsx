@@ -1,9 +1,10 @@
 interface Conference {
     id: number,
-    name: string,
+    conferenceName: string,
     location: string,
     startDate: Date,
     endDate: Date, 
+    price: string,
     tags: string[],
     link: string,
     description: string

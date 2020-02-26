@@ -1,30 +1,33 @@
 [
     {
         "id": 1,
-        "name": "In/Visible Talks",
-        "location": "USA, San Fransisco",
-        "startDate": "2020-01-20",
-        "endDate": "2020-01-20",
-        "tags": ["Design"],
-        "link": "https://invisibletalks.com/conference-2020/",
-        "description": "This creative conference focuses on design practitioners having candid conversations and sharing real-life experiences. Speakers will be covering topics such as, “Design No Harm: Why Humility is Essential in the Journey Toward Equity,” and “Bring Your Whole Self to Work: How Your Purpose Drives Impact.”"
-    },
-    {
-        "id": 2,
-        "name": "DesignTO",
+        "conferenceName": "DesignTO",
         "location": "USA, Toronto",
         "startDate": "2020-01-17",
         "endDate": "2020-01-26",
+        "price": "",
         "tags": ["Design", "UX", "UI"],
         "link": "https://invisibletalks.com/conference-2020/",
         "description": "Hosting independent projects, such as exhibitions, events (e.g. tours, talks, workshops), and window installations that are wholly created and executed by an individual or organization. A venue-designer matchmaking program if you’d prefer to collaborate with a host organization. DesignTO Projects, which are either open by invitation or submission to the festival."
     },
     {
+        "id": 2,
+        "conferenceName": "In/Visible Talks",
+        "location": "USA, San Fransisco",
+        "startDate": "2020-01-20",
+        "endDate": "2020-01-20",
+        "price": "",
+        "tags": ["Design"],
+        "link": "https://invisibletalks.com/conference-2020/",
+        "description": "This creative conference focuses on design practitioners having candid conversations and sharing real-life experiences. Speakers will be covering topics such as, “Design No Harm: Why Humility is Essential in the Journey Toward Equity,” and “Bring Your Whole Self to Work: How Your Purpose Drives Impact.”"
+    },
+    {
         "id": 3,
-        "name": "React Day Norway",
+        "conferenceName": "React Day Norway",
         "location": "Narvik, Norge",
         "startDate": "2020-06-25",
         "endDate": "2020-06-25",
+        "price": "",
         "tags": ["Frontend", "React"],
         "link": "https://reactnorway.com/",
         "description": "React Norway is ... "

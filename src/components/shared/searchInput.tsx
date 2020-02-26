@@ -1,6 +1,5 @@
 import React from 'react';
-import Data from '../types/data';
-import '../styles/searchInput.scss';
+import Data from '../../types/data';
 
 interface Props {
     data: Data[],
@@ -25,10 +24,10 @@ function SearchInput(props: Props) {
     }
 
     return (
-        <div className="searchInput">
+        <>
             <label>{label}</label>
             <input type="text" placeholder="Søk..." name="search-input" onKeyUp={filter} />
-        </div>
+        </>
     )
 }
 

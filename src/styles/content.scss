@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.content {
+    margin: 0 10vw;
+
+    button {
+        @extend .button
+    }
+
+    p {
+        margin: 1em 0;
+        line-height: 1.5em;
+        text-align: start;
+        span {
+            font-weight: bold;
+            color: $mainColor;
+        }
+    }
+
+    label {
+        font-weight: bold;
+        text-align: start;
+    }
+
+    input {
+        width: 80vw;
+        padding: 1vh 1vw;
+        height: 2vh;
+        font-size: 1em;
+    }
+
+    .tips {
+        margin-top: 5vh;
+    }
+}

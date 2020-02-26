@@ -1,14 +1,23 @@
 [
     {
         "id": 1,
-        "podcastName": "pod1",
-        "episodeName": "episode1",
+        "podcastName": "Podcast Navn 123",
+        "episodeName": "Episode 1 - En eller annen tittel",
+        "link": "www.google.com",
         "tags": ["tag1", "tag2"]
     },
     {
         "id": 2,
-        "podcastName": "podcastName ABC",
-        "episodeName": "episode10",
+        "podcastName": "podcast Navn ABC",
+        "episodeName": "Episode 33 - En eller annen tittel",
+        "link": "www.google.com",
         "tags": ["tagA", "tagB"]
+    },
+    {
+        "id": 3,
+        "podcastName": "podcast Navn DEF",
+        "episodeName": "Episode 12 - En eller annen tittel",
+        "link": "www.google.com",
+        "tags": ["tag3", "tag5"]
     }
 ]

@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "name": "Digital Twin",
-        "description": "En digital kopi av fysiske eiendeler (fysisk tvilling), prosess, menneske, sted, system. Den digitale kopien oppdateres og endres i takt med den fysiske."
+        "buzzwordName": "Adaptive device",
+        "description": "Ting som tilpasser seg brukeren basert på brukerens adferd eller kommandoer."
     },
     {
         "id": 2,
-        "name": "Augmented Reality",
+        "buzzwordName": "Augmented Reality",
         "description": "Bringer folk inn i en fiktiv virkelighet ved hjelp av en 'dings': briller, mobil, tablets. Gjør det mulig for noen (lærere, doktorer, entreprenører) å lære opp folk, simulere fremtiden, historien, omgivelser, hendelser samt spille og leke sammen."
     },
     {
         "id": 3,
-        "name": "Virtual Reality",
-        "description": "Utvidet virkelighet: gjør det mulig for brukeren å fordype seg i et miljø. "
+        "buzzwordName": "Digital Twin",
+        "description": "En digital kopi av fysiske eiendeler (fysisk tvilling), prosess, menneske, sted, system. Den digitale kopien oppdateres og endres i takt med den fysiske."
     },
     {
         "id": 4,
-        "name": "Adaptive device",
-        "description": "Ting som tilpasser seg brukeren basert på brukerens adferd eller kommandoer."
+        "buzzwordName": "Virtual Reality",
+        "description": "Utvidet virkelighet: gjør det mulig for brukeren å fordype seg i et miljø. "
     }
 ]

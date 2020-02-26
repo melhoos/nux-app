@@ -1,6 +1,6 @@
 interface Buzzword {
     id: number,
-    name: string,
+    buzzwordName: string,
     description: string
 }
 
