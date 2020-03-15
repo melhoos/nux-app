@@ -2,11 +2,11 @@ import React, {ReactNode, useState} from 'react';
 
 enum Pages {
     //Home = 'HOME',
-    About = 'OM NUX',
-    Buzzword = 'BUZZWORD',
-    Conference = 'KURS/KONFERANSER',
-    Project = 'PROSJEKT',
-    Inspiration = 'INSPIRASJON',
+    About = 'Om NUX',
+    Buzzword = 'Buzzwords',
+    Conference = 'Kurs og Konferanser',
+    Project = 'Prosjekter',
+    Inspiration = 'Inspirasjon',
     // Conferences = 'CONFERENCES',
     // Podcasts = 'PODCASTS'
 }

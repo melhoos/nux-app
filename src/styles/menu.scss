@@ -1,18 +1,8 @@
 @import './variables.scss';
 
-.Menu {
-    min-height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    button {
-      @extend .button
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .Menu {
-      flex-direction: column;
-    }
+nav {
+  box-shadow: 0px 2px 5px lightgray;
+  .navbar-brand {
+    padding: 0;
   }
+}
