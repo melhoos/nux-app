@@ -35,12 +35,9 @@ function formatData (data: Data, i: number): ReactElement {
     if (instanceOfBuzzword(data)) {
         return (<p key={i}><span>{data.buzzwordName}:</span> {data.description}</p>)
     } else if (instanceOfConference(data)) {
-        return (
-            <p key={i}>
-                <span>{data.conferenceName}</span>, {data.location}, {getMonth(data.startDate)}, <a href={data.link} target="_blank" rel="noopener noreferrer">(link)</a>
-            </p>)
+        return ( <p key={i}> <span><a href={data.link} target="_blank" rel="noopener noreferrer">{data.conferenceName}</a></span>, {data.location}, {getMonth(data.startDate)} </p>)
     } else if (instanceOfPodcast(data)) {
-        return ( <p key={i}><span>{data.podcastName}</span> - {data.episodeName} <a href={data.link} target="_blank" rel="noopener noreferrer">(link)</a></p> )
+        return ( <p key={i}><span> <a href={data.link} target="_blank" rel="noopener noreferrer">{data.podcastName}</a></span> - {data.episodeName}</p> )
     } else if (instanceOfProject(data)) {
     return (<p key={i}><span>{data.projectName}</span>, {data.customer}, {data.kam}, {data.description}</p>)
     } else {

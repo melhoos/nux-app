@@ -58,8 +58,7 @@
     kubectl apply -f service.yml
     kubectl apply -f ingress.yml
     ```
-
-
+    
  ![Docker and Azure illustration](./Kubernetes.png)
 
 ## Deploy changes: 
@@ -85,6 +84,9 @@ kubectl apply -f deployment.yml
 ```
 
 ## Troubleshooting
+
+### Docker push require login?
+` az acr login -n itetechmadacr`
 
 #### Azure login failed? 
 `$az account list` to check if you have an accout within azure.

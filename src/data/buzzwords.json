@@ -1,22 +1,177 @@
 [
     {
         "id": 1,
-        "buzzwordName": "Adaptive device",
-        "description": "Ting som tilpasser seg brukeren basert på brukerens adferd eller kommandoer."
+        "buzzwordName": "3D Printing",
+        "description": "3D-printing er en produksjonsteknikk der tredimensjonale objekter bygges opp lag for lag ved hjelp av et skriverhode."
     },
     {
         "id": 2,
-        "buzzwordName": "Augmented Reality",
-        "description": "Bringer folk inn i en fiktiv virkelighet ved hjelp av en 'dings': briller, mobil, tablets. Gjør det mulig for noen (lærere, doktorer, entreprenører) å lære opp folk, simulere fremtiden, historien, omgivelser, hendelser samt spille og leke sammen."
+        "buzzwordName": "Adaptive Device",
+        "description": "Dingser/ ting som tilpasser seg folk."
     },
     {
         "id": 3,
-        "buzzwordName": "Digital Twin",
-        "description": "En digital kopi av fysiske eiendeler (fysisk tvilling), prosess, menneske, sted, system. Den digitale kopien oppdateres og endres i takt med den fysiske."
+        "buzzwordName": "Applications Architecture",
+        "description": "En applikasjonsarkitektur beskriver oppførselen til applikasjoner som brukes i en virksomhet, fokusert på hvordan de samhandler med hverandre og med brukere."
     },
     {
         "id": 4,
-        "buzzwordName": "Virtual Reality",
-        "description": "Utvidet virkelighet: gjør det mulig for brukeren å fordype seg i et miljø. "
+        "buzzwordName": "AI - Artificial Intelligence",
+        "description": "AI betyr kunstig intelligens og handler om å gi datamaskiner evnen til å imitere menneskelig oppførsel. Det kan feks  vær å oversette språk, bildegjenkjenning, talegjenkjenning, samt beslutningstaking."
+    },
+    {
+        "id": 5,
+        "buzzwordName": "AI prediksjon",
+        "description": "Å forutsi noe (adferd, holdninger, utfall av en hendelse) ved hjelp av kunstig intelligens."
+    },
+    {
+        "id": 6,
+        "buzzwordName": "Augmented Analytics",
+        "description": "Å prosessere og analysere store datamengder."
+    },
+    {
+        "id": 7,
+        "buzzwordName": "AR - Augmented Reality",
+        "description": "AR betyr utvidet virkelighet og innebærer at du legger ekstra informajson oppå virkeligheten slik du opplever den i dag."
+    },
+    {
+        "id": 8,
+        "buzzwordName": "Autonomous things",
+        "description": "Automatiserte eller selvstyrende ting."
+    },
+    {
+        "id": 9,
+        "buzzwordName": "Big Data",
+        "description": "Store mengder data."
+    },
+    {
+        "id": 10,
+        "buzzwordName": "Big Query",
+        "description": "Interaktiv analyse av store mengder data."
+    },
+    {
+        "id": 11,
+        "buzzwordName": "Biometrics",
+        "description": "Biometri er måling av biologiske mønstre. Biologiske mønstre kan være fysiologiske karaktertrekk (for eksempel fingeravtrykk eller adferdsmønstre (for eksempel ganglag)."
+    },
+    {
+        "id": 12,
+        "buzzwordName": "Blockchain",
+        "description": "En blokkjede er en kjede av data. KJeden kan brukes som en digital, distribuert regnskapsbok for økonomiske transaksjoner."
+    },
+    {
+        "id": 13,
+        "buzzwordName": "Computer Vision",
+        "description": "Et vitenskapelig felt som tar for seg teknikker for hvordan datamaskiner kan forstå digitale bilder eller videoer."
+    },
+    {
+        "id": 14,
+        "buzzwordName": "Cloud Computing",
+        "description": "En forretningsmodell der virksomheter betaler for det de bruker av teknologi til å bearbeide og lagre data via Internett."
+    },
+    {
+        "id": 15,
+        "buzzwordName": "Cyber Secuirty",
+        "description": "Datasikkerhet i skyen."
+    },
+    {
+        "id": 16,
+        "buzzwordName": "Data Streaming",
+        "description": "En kontinuerlig strøm ac data fra ulike kilder samlet ett sted, som gjør det mulig å ta i bruk data raskt."
+    },
+    {
+        "id": 17,
+        "buzzwordName": "DL - Deep Learning",
+        "description": "Deep Learning, eller dyp læring, handler om at maskinen lærer seg å gjenkjenne noe ved bruk av nevrale nettverk. Det kan være mønster, linjer, kanter, tekst eller lyder."
+    },
+    {
+        "id": 18,
+        "buzzwordName": "DevOps",
+        "description": "En metode som gjør at utvikling/ programmering og drift av forretningen kan skje parallelt/ samtidig."
+    },
+    {
+        "id": 19,
+        "buzzwordName": "Digital Twin",
+        "description": "En digital representasjon av et fysisk objekt, sted, folk, system eller prosess. Den speiler den virkelige i sanntid, lærer og endrer seg i takt med den."
+    },
+    {
+        "id": 20,
+        "buzzwordName": "Edge Computing",
+        "description": "Å flytte behandling og prosessering av data fra sentrale servere til et sted nær den enheten dataen stammer fra."
+    },
+    {
+        "id": 21,
+        "buzzwordName": "Hybrid Cloud",
+        "description": "En forretningsmodell der virksomheter prosesserer, lagrer og programmerer både i skyen og lokalt."
+    },
+    {
+        "id": 22,
+        "buzzwordName": "Intelligent Apps",
+        "description": "Intelligente applikasjoner."
+    },
+    {
+        "id": 23,
+        "buzzwordName": "IOT - Internet of Things",
+        "description": "Fysiske ting koblet til Internet ved hjelp av «IoT-devices» eller dingser på godt norsk."
+    },
+    {
+        "id": 24,
+        "buzzwordName": "ML - Machine Learning",
+        "description": "En underkategori av kunstig intelligens (AI). Du bygger et program ved hjelp av statistiske metoder og algoritmer for å lære datamasiner å finne mønstre i store datamangder."
+    },
+    {
+        "id": 25,
+        "buzzwordName": "MR - Mixed Reality",
+        "description": "MR betyr mikset virkelighet som innebærer at du mikser virkeligheten med den fiktive. MR gjør at virkeligheten og den digitale reagerer med hverandre."
+    },
+    {
+        "id": 26,
+        "buzzwordName": "NLP - Natural Language Processing",
+        "description": "Natural Language Processing, NLP, eller naturlig språkprosessering betyr at maskinen lærer seg å trekke ut informasjon fra en tekst for å analysere og forstå teksten."
+    },
+    {
+        "id": 27,
+        "buzzwordName": "PDR - ersonal Data Records",
+        "description": "Samligen av alle personlige data du har generert i livet ditt."
+    },
+    {
+        "id": 28,
+        "buzzwordName": "Quantum Computing",
+        "description": "Å prosessere og programmere store mengder data."
+    },
+    {
+        "id": 29,
+        "buzzwordName": "RL - Reinforcement Learning",
+        "description": "Reinforcement Learning, eller forsterket læring, betyr at maskinen lærer seg å optimalisere en handling eller en adferd basert på en form for belønning."
+    },
+    {
+        "id": 30,
+        "buzzwordName": "Robotic Process Automation",
+        "description": "RPA betyr automatisering av oppgaver."
+    },
+    {
+        "id": 31,
+        "buzzwordName": "Smart Spaces",
+        "description": "Smarte hjem, smarte kjøretøy, smart energi osv betyr å effektivisere gjenstaden eller bransjen."
+    },
+    {
+        "id": 32,
+        "buzzwordName": "Personal Data Records",
+        "description": "Samligen av alle personlige data du har generert i livet ditt."
+    },
+    {
+        "id": 33,
+        "buzzwordName": "Privacy and Digital Ethics",
+        "description": "Etikk og personvern."
+    },
+    {
+        "id": 34,
+        "buzzwordName": "Upgraded Humans",
+        "description": "Oppgraderte mennesker."
+    },
+    {
+        "id": 35,
+        "buzzwordName": "VR - Virtual Reality",
+        "description": "VR betyr virtuell virkelighet og innebærer at du opplever en fantasiverden fra fortiden, tenkt fremtid eller annerledes nåtid. VR tar deg til et annet sted."
     }
 ]

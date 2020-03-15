@@ -4,6 +4,7 @@ interface ConferenceJson {
     location: string,
     startDate: string,
     endDate: string, 
+    month: string,
     price: string,
     tags: string[],
     link: string,

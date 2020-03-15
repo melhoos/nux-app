@@ -14,12 +14,16 @@
         span {
             font-weight: bold;
             color: $mainColor;
+            a {
+                color: $mainColor;
+            }
         }
     }
 
     label {
         font-weight: bold;
         text-align: start;
+        line-height: 1.5em;
     }
 
     input {
@@ -31,5 +35,15 @@
 
     .tips {
         margin-top: 5vh;
+    }
+
+    .showAllBtn {
+        display: flex;
+        justify-content: center;
+        margin: 0.5em;
+    
+        button:disabled {
+            visibility: hidden;
+        }
     }
 }
