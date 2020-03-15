@@ -1,14 +1,12 @@
 import React, {ReactNode, useState} from 'react';
 
 enum Pages {
-    //Home = 'HOME',
     About = 'Om NUX',
     Buzzword = 'Buzzwords',
     Conference = 'Kurs og Konferanser',
     Project = 'Prosjekter',
     Inspiration = 'Inspirasjon',
-    // Conferences = 'CONFERENCES',
-    // Podcasts = 'PODCASTS'
+    // Podcasts = 'Podcaster'
 }
 
 const initPage = Pages.About
