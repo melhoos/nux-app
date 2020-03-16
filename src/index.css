@@ -3,8 +3,8 @@
   font-style: 'normal';
   font-weight: 400;
   src:
-    local('ApexNew-Light'),
-    url('./assets/fonts/ApexNew-Light.otf') format('opentype');
+    local('ApexNew-Book'),
+    url('./assets/fonts/ApexNew-Book.otf') format('opentype');
 }
 
 @font-face {

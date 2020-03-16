@@ -4,6 +4,7 @@ import Buzzword from '../../interfaces/buzzword';
 import Conference from '../../interfaces/conference';
 import Podcast from '../../interfaces/podcast';
 import Project from '../../interfaces/project';
+import ConferenceItem from '../conference/conferenceItem';
 
 interface Props {
     elements: Data[]
@@ -25,17 +26,22 @@ function instanceOfProject(object: Data): object is Project {
     return 'projectName' in object
 }
 
-function getMonth(d: Date): string {
-    const months = ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Des']
-    return `${months[d.getMonth()]} ${d.getFullYear()}`
+function renderBuzzword(buzzWord: Buzzword) {
+    return (
+        <div className="data-item">
+            <h2>{buzzWord.buzzwordName}</h2>
+            <p>{buzzWord.description}</p>
+        </div>
+    )
 }
 
 function formatData (data: Data, i: number): ReactElement {
 
     if (instanceOfBuzzword(data)) {
-        return (<p key={i}><span>{data.buzzwordName}:</span> {data.description}</p>)
+        return renderBuzzword(data)
     } else if (instanceOfConference(data)) {
-        return ( <p key={i}> <span><a href={data.link} target="_blank" rel="noopener noreferrer">{data.conferenceName}</a></span>, {data.location}, {getMonth(data.startDate)} </p>)
+        return (<ConferenceItem conference={data}/>)
+        //return ( <p key={i}> <span><a href={data.link} target="_blank" rel="noopener noreferrer">{data.conferenceName}</a></span>, {data.location}, {getMonth(data.startDate)} </p>)
     } else if (instanceOfPodcast(data)) {
         return ( <p key={i}><span> <a href={data.link} target="_blank" rel="noopener noreferrer">{data.podcastName}</a></span> - {data.episodeName}</p> )
     } else if (instanceOfProject(data)) {

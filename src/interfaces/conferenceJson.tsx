@@ -1,7 +1,8 @@
 interface ConferenceJson {
     id: number,
     conferenceName: string,
-    location: string,
+    country: string,
+    city: string,
     startDate: string,
     endDate: string, 
     month: string,

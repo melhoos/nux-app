@@ -11,7 +11,9 @@ const ShowAllBtn = (props: Props) => {
     const {allElements, filteredElements, setAll} = props
     return ( 
         <div className="showAllBtn">
-            <button onClick={() => setAll()} disabled={allElements.length === filteredElements.length}>VIS ALLE</button>
+            <button onClick={() => setAll()} disabled={allElements.length === filteredElements.length}>
+                Vis alle
+            </button>
         </div>
     )
 }

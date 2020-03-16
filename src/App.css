@@ -1,6 +1,7 @@
 
 body {
   font-family: 'ApexNew';
+  font-variant-numeric: lining-nums;
 }
 
 h1 {
@@ -8,40 +9,28 @@ h1 {
   font-size: 20px;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+label {
+  font-family: 'ApexNew';
+  font-weight: 500;
+  text-align: start;
+  font-size: 18px;
+  line-height: 1em;
+}
+
 p {
-  font-family: 'Arial';
+  font-family: 'ApexNew';
+  font-size: 16px;
 }
-
-
-li {
-  list-style-type: none;
-}
-
-.table-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-table {
-  width: 85%;
-  border-collapse: collapse;
-  text-align: initial;
-}
-thead tr, tbody tr:hover {
-  background-color: rgb(229, 237, 248);
-}
-th {
-  text-align: initial;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  padding: 1em 0;
-}
-td {
-  padding: 1em 0;
-}
-.tag {
-  background: lightsteelblue;
-  margin: 0.3em;
-  padding: 0.3em;
-  border-radius: 5%;
+ 
+input {
+  width: 80vw;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1em;
+  border: 1px solid black;
 }

@@ -17,6 +17,7 @@ const ConferenceWrapper = () => {
     const [conferances, setConferances] = useState(mappedConferences)
     return (
         <>
+            <h1>Kurs og konferanser</h1>
             <p>Kurs og konferanser der du kan lære mer om NUX.</p>
             <SearchInput label="Hva vil du lære om? Hvor vil du dra? Når vil du dra? Prøv lykken!"  data={mappedConferences} filteredData={(c) => setConferances(c) } />
             <ShowAllBtn allElements={mappedConferences} filteredElements={conferances} setAll={() => setConferances(mappedConferences)}/>

@@ -3,51 +3,33 @@
 .content {
     margin: 2vh 10vw 0;
 
-
-
-
-
-    button {
-        @extend .button
-    }
-
-    p {
-        margin: 1em 0;
-        line-height: 1.5em;
-        text-align: start;
-        span {
-            font-weight: bold;
-            color: $mainColor;
-            a {
-                color: $mainColor;
-            }
-        }
-    }
-
-    label {
-        font-weight: bold;
-        text-align: start;
-        line-height: 1.5em;
-    }
-
-    input {
+    .data-item {
+        padding: 15px;
         width: 80vw;
-        padding: 1vh 1vw;
-        height: 2vh;
-        font-size: 1em;
-    }
-
-    .tips {
-        margin-top: 5vh;
+        margin: 20px 0px;
+        box-shadow: 0px 0px 5px 1px lightgray;
+        background-color: transparent;
+        text-align: start;
+        display: block;
+        .conferenceTitle {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     .showAllBtn {
         display: flex;
         justify-content: center;
-        margin: 0.5em;
-    
+        margin-top: 10px;
+        button {
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid black;
+            width: 80vw;
+        }
         button:disabled {
-            visibility: hidden;
+            display: none;
         }
     }
+
 }

@@ -26,7 +26,7 @@ function SearchInput(props: Props) {
     return (
         <>
             <label>{label}</label>
-            <input type="text" placeholder="Søk..." name="search-input" onKeyUp={filter} />
+            <input type="text" placeholder="Søk" name="search-input" onKeyUp={filter} />
         </>
     )
 }
