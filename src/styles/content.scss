@@ -2,7 +2,7 @@
 
 .content {
     margin: 2vh 10vw 0;
-
+    
     .data-item {
         padding: 15px;
         width: 80vw;
@@ -11,10 +11,18 @@
         background-color: transparent;
         text-align: start;
         display: block;
-        .conferenceTitle {
+        border: none;
+        .data-content {
+            margin-bottom: 0
+        }
+        .conference-title {
             display: flex;
             justify-content: space-between;
         }
+        .conference-description {
+            margin-top: 1rem;
+        }
+    
     }
 
     .showAllBtn {

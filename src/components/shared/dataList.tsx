@@ -30,7 +30,7 @@ function renderBuzzword(buzzWord: Buzzword) {
     return (
         <div className="data-item">
             <h2>{buzzWord.buzzwordName}</h2>
-            <p>{buzzWord.description}</p>
+            <p className="data-content">{buzzWord.description}</p>
         </div>
     )
 }

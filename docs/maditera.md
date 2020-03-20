@@ -41,9 +41,10 @@
 1. In order for our `Kubernetes` to access our `Docker Image` we need to register our `Image` to `ACR`. 
 2. Push/Register your `Docker Image` to `ACR` with following command:
     ```
-    $docker push itetechmadacr.azureacr.io/<name of image>:latest
+    $docker push itetechmadacr.azurecr.io/<name of image>:latest
     ```
-3. **OPS!** Sometimes your need to login to Azure in order to push to `itetechmadacr.azureacr.io`. Run `$az login` and login with Itera credentials. 
+3. **OPS!** Sometimes your need to login to Azure in order to push to `itetechmadacr.azurecr.io`. Run `$az login` and login with Itera credentials. 
+4. **OPS!** if this is not working try: `$az acr login --name itetechmadacr`
 
 ### Tell `Kubernetes` to access your `Docker Image`
 
@@ -68,16 +69,16 @@ There are two ways to do this:
 #### Latest
 First, you can always use the latest version of your source code. This is easiest when you are in test stage and not depeding on different versions.
 ```
-docker build -t itetechmadacr.azureacr.io/<name of image> .
-docker push itetechmadacr.azureacr.io/<name of image>:latest
+docker build -t itetechmadacr.azurecr.io/<name of image> .
+docker push itetechmadacr.azurecr.io/<name of image>:latest
 kubectl delete -f deployment.yml
 kubectl apply -f deployment.yml
 ```
 #### With versions
 Second option is using versions. Then you need to update the version you want to run in `deployment.yml`. 
 ```
-docker build -t itetechmadacr.azureacr.io/<name of image>:VER .
-docker push itetechmadacr.azureacr.io/<name of image>:VER
+docker build -t itetechmadacr.azurecr.io/<name of image>:VER .
+docker push itetechmadacr.azurecr.io/<name of image>:VER
 //  Update version in deployment.yml
 kubectl delete -f deployment.yml
 kubectl apply -f deployment.yml
@@ -86,7 +87,7 @@ kubectl apply -f deployment.yml
 ## Troubleshooting
 
 ### Docker push require login?
-` az acr login -n itetechmadacr`
+`$az acr login -n itetechmadacr`
 
 #### Azure login failed? 
 `$az account list` to check if you have an accout within azure.

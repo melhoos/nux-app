@@ -20,15 +20,15 @@ const ConferenceItem = (props: Props) => {
     return (
         <button className="data-item" onClick={() => setOpen(!open)} aria-controls="example-collapse-text"
         aria-expanded={open}>
-            <span className="conferenceTitle">
+            <span className="conference-title">
                 <h2>{conference.conferenceName}</h2>
                 <FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} />
             </span>
-            <p> 
+            <p className="data-content"> 
                 {`${conference.country}, ${conference.city}, ${getMonth(conference.startDate)}` }
             </p>
             <Collapse in={open}>
-                <div id="example-collapse-text">{conference.description}</div>
+                <p className="data-content conference-description" id="example-collapse-text">{conference.description}</p>
             </Collapse>
         </button>
     )
