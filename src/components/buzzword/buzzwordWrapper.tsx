@@ -7,7 +7,7 @@ const loading = () => {
 }
 
 const error = () => {
-    return (<>Errror!</>)
+    return (<div className="error">Errror!</div>)
 }
 
 const BuzzwordWrapper = () => {
