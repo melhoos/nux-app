@@ -11,7 +11,7 @@ interface Props {
 }
 
 function instanceOfBuzzword(object: Data): object is Buzzword {
-    return 'buzzwordName' in object;
+    return ('Id' in object) && ('Title' in object) && ('Description' in object) ;
 }
 
 function instanceOfConference(object: Data): object is Conference {
@@ -26,17 +26,16 @@ function instanceOfProject(object: Data): object is Project {
     return 'projectName' in object
 }
 
-function renderBuzzword(buzzWord: Buzzword) {
+function renderBuzzword(bw: Buzzword) {
     return (
-        <div className="data-item">
-            <h2>{buzzWord.buzzwordName}</h2>
-            <p className="data-content">{buzzWord.description}</p>
+        <div className="data-item" key={bw.Id}>
+            <h2>{bw.Title}</h2>
+            <p className="data-content">{bw.Description}</p>
         </div>
     )
 }
 
 function formatData (data: Data, i: number): ReactElement {
-
     if (instanceOfBuzzword(data)) {
         return renderBuzzword(data)
     } else if (instanceOfConference(data)) {

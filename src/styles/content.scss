@@ -2,6 +2,10 @@
 
 .content {
     margin: 2vh 10vw 0;
+
+    .loading {
+        color: $mainColor;
+    }
     
     .data-item {
         padding: 15px;

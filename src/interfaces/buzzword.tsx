@@ -1,7 +1,7 @@
 interface Buzzword {
-    id: number,
-    buzzwordName: string,
-    description: string
+    Id: number,
+    Title: string,
+    Description: string
 }
 
 export default Buzzword
