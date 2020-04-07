@@ -14,11 +14,6 @@ interface Page {
 
 const Pages: Page[] = [
     {
-        type: PageType.Home,
-        url: "/",
-        name: "Hjem"
-    },
-    {
         type: PageType.Conferences,
         url: "/conferences",
         name: "Konferanser"

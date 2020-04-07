@@ -1,25 +1,22 @@
-import React, {useState} from 'react';
-// import Data from '../../types/data';
-// import conferenceData from '../../data/conferences.json';
-// import ConferenceJson from '../../interfaces/conferenceJson';
-
-// function conferenceMapper(conferenceJson: ConferenceJson[]): Data[] {
-//     return conferenceJson.map( (conferenceJ) => {
-//         return {...conferenceJ, startDate: new Date(conferenceJ.startDate), endDate: new Date(conferenceJ.endDate)}
-//     })
-// }
+import React from 'react';
+import BackBtn from '../backBtn';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 const ConferenceWrapper = () => {
-    // const mappedConferences = conferenceMapper(conferenceData)
-    // const [conferances, setConferances] = useState(mappedConferences)
     return (
         <>
-            <h1>Kurs og konferanser</h1>
-            <p>Kurs og konferanser der du kan lære mer om NUX.</p>
-            {/* <SearchInput label="Hva vil du lære om? Hvor vil du dra? Når vil du dra? Prøv lykken!"  data={mappedConferences} filteredData={(c) => setConferances(c) } />
-            <ShowAllBtn allElements={mappedConferences} filteredElements={conferances} setAll={() => setConferances(mappedConferences)}/>
-            <DataList elements={conferances}/> */}
-            <p className="tips"><span>Tips oss:</span> Har du vært et sted? Kjenner du til kurs og konferanser? Du vet hvor du finner oss.</p>
+            <BackBtn/>
+            <h1>Konferanser</h1>
+            <p>Vi har har gjort den harde jobben for deg, nemlig sett på alle kurs, konferanser og sertifiseringer for deg - slik at du slipper å se gjennom all ræl som finnes der ute. Håper du finner noe du liker.</p>
+            <a className="page-link" href={"/"}>
+                <FontAwesomeIcon icon={faSearch}/>
+                <span className="page-link-name">{"Finn konferanse"}</span>
+            </a>
+            <a className="page-link" href={"/"}>
+                <FontAwesomeIcon icon={faHeart}/>
+                <span className="page-link-name">{"Skriv en tilbakemedling fra konferanse"}</span>
+            </a>
         </>
     )
 }

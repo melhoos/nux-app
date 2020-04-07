@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import BackBtn from '../backBtn';
+import BuzzwordItem from './buzzworItem';
 import Spinner from 'react-bootstrap/Spinner';
 import {getBuzzwords} from './buzzwordService';
-import BuzzwordItem from './buzzworItem';
 import Buzzword from '../../interfaces/buzzword';
 import { Service, ConnectionStatus } from '../../utility/service';
 import '../../styles/buzzword.scss';
@@ -33,6 +34,7 @@ const BuzzwordWrapper = () => {
 
     return (
         <>
+            <BackBtn/>
             <h1>Buzzwords</h1>
             <p>Vil du bli en skikkelig "besserwisser" på nye teknlogoier? Ingen problem. Her får du kortversjonene du kan briefe med i møter og middagsselskap.</p>
             {buzzwords.status === ConnectionStatus.LOADING  && onLoading()}

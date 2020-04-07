@@ -1,50 +1,38 @@
 @import './variables.scss';
 
 .content {
-    margin: 2vh 10vw 0;
+    margin: 4vh 10vw 0;
 
+    .back-btn {
+        .back-link {
+            color: $blackColor;
+            font-size: $pFontSize;
+            margin-left: 1vw;
+        }
+        .back-link:hover {
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: solid 1px $mainColor;
+        }
+        margin-bottom: 2vw;
+    }
+    
     .loading, .error {
         display:flex;
         justify-content: center;
         color: $mainColor;
         margin-bottom: 1em;
-        
-    }
-    
-    .data-item {
-        padding: 15px;
-        width: 80vw;
-        margin: 20px 0px;
-        box-shadow: 0px 0px 5px 1px lightgray;
-        background-color: transparent;
-        text-align: start;
-        display: block;
-        border: none;
-        .data-content {
-            margin-bottom: 0
-        }
-        .conference-title {
-            display: flex;
-            justify-content: space-between;
-        }
-        .conference-description {
-            margin-top: 1rem;
-        }
-    
     }
 
-    .showAllBtn {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        button {
-            padding: 15px;
-            font-size: 16px;
-            border: 1px solid black;
-            width: 80vw;
-        }
-        button:disabled {
-            display: none;
+    .page-link {
+        display: block;
+        box-shadow: 0px 0px 5px lightgrey;
+        padding: 30px 30px;
+        margin-bottom: 2vh;
+        color: $blackColor;
+        font-size: $labelFontSize;
+        .page-link-name {
+            margin-left: 2vw;
         }
     }
 
