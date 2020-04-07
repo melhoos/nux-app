@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.buzzword-item {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 5px lightgray;
+    text-align: start;
+    padding: 20px 20px;
+    margin-bottom: 2vh;
+    .buzzword-title {
+        display: flex;
+        justify-content: space-between;
+        height: 1em;
+    }
+    .buzzword-description {
+        margin: 1em 0 0 0;
+    }
+}

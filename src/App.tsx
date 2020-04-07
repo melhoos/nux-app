@@ -1,19 +1,15 @@
 import React from 'react';
-import Menu from './components/menu';
+import NavbarMenu from './components/navbarMenu';
 import ContentWrapper from './components/contentWrapper';
-import {PageProvider} from './providers/pageProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-
+import './styles/App.scss';
 
 const App = () => {
   return (
-    <PageProvider>
-    <div className="App">
-      <Menu/>
-      <ContentWrapper/>
-    </div>
-    </PageProvider>
+      <div className="App">
+        <NavbarMenu/>
+        <ContentWrapper/>
+      </div>
   );
 }
 

@@ -1,3 +1,4 @@
+@import './variables.scss';
 
 body {
   font-family: 'ApexNew';
@@ -6,31 +7,31 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: $hFontSize;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: $labelFontSize;
 }
 
 label {
   font-family: 'ApexNew';
   font-weight: 500;
   text-align: start;
-  font-size: 18px;
+  font-size: $labelFontSize;
   line-height: 1em;
 }
 
 p {
   font-family: 'ApexNew';
-  font-size: 16px;
+  font-size: $pFontSize;
 }
  
 input {
   width: 80vw;
   padding: 16px;
-  font-size: 16px;
+  font-size: $pFontSize;
   line-height: 1em;
   border: 1px solid black;
 }

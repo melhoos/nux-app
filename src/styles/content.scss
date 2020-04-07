@@ -4,7 +4,11 @@
     margin: 2vh 10vw 0;
 
     .loading, .error {
+        display:flex;
+        justify-content: center;
         color: $mainColor;
+        margin-bottom: 1em;
+        
     }
     
     .data-item {
