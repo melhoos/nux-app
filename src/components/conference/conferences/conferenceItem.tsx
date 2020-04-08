@@ -3,7 +3,6 @@ import {Collapse} from 'react-bootstrap';
 import Conference from '../../../interfaces/conference';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronUp, faChevronDown, faMapMarkerAlt, faCalendarAlt, faClock} from '@fortawesome/free-solid-svg-icons';
-import '../../../styles/conference.scss';
 
 interface Props {
     conference: Conference

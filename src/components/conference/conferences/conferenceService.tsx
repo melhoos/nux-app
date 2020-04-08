@@ -17,3 +17,19 @@ export async function getConferences(): Promise<Service<Conference[]>> {
             return errorResult
         })
 }
+
+export async function getConferencesFromToday(): Promise<Service<Conference[]>> {
+    return await fetch(`${apiUrl}/conferencesFromToday`)
+        .then((response: Response) => {
+            if (response.ok) return response.json()
+            else throw new Error(`Error: ${response.statusText}`)
+        })
+        .then((response: Conference[]) => {
+            const result: Service<Conference[]> = {status: ConnectionStatus.SUCCESS, payload: response}
+            return result
+        })
+        .catch((error: Error) => {
+            const errorResult: Service<Conference[]> = {status: ConnectionStatus.ERROR, error}
+            return errorResult
+        })
+}

@@ -28,10 +28,12 @@ p {
   font-size: $pFontSize;
 }
  
-input {
+input[type='text'] {
   width: 80vw;
   padding: 16px;
   font-size: $pFontSize;
   line-height: 1em;
-  border: 1px solid black;
+  border: none;
+  box-shadow: 0 0 5px lightgrey;
+  margin-top: 0.5rem;
 }
