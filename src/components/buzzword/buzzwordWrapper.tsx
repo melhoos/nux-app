@@ -1,28 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import BackBtn from '../backBtn';
+import BackBtn from '../shared/backBtn';
 import BuzzwordItem from './buzzworItem';
-import Spinner from 'react-bootstrap/Spinner';
 import {getBuzzwords} from './buzzwordService';
 import Buzzword from '../../interfaces/buzzword';
-import { Service, ConnectionStatus } from '../../utility/service';
+import {Service, ConnectionStatus} from '../../utility/service';
+import {onLoading, onError} from '../shared/serviceResponses';
 import '../../styles/buzzword.scss';
 
-const onLoading = () => {
-    return (
-        <div className="loading">
-            <Spinner animation="grow" /> 
-        </div>
-    )
-}
-
-const onError = () => {
-    return (<div className="error">Errror!</div>)
-}
-
 const onSuccess = (buzzwords: Buzzword[]) => {
-    return (
-        <div> {buzzwords.map((b: Buzzword) => <BuzzwordItem buzzword={b}/>)} </div>
-    )
+    return (buzzwords.length) ? 
+        (<div> {buzzwords.length && buzzwords.map((b: Buzzword, i: number) => <BuzzwordItem buzzword={b} key={i}/>)} </div>) : 
+        onError();
 }
 
 const BuzzwordWrapper = () => {
@@ -34,7 +22,7 @@ const BuzzwordWrapper = () => {
 
     return (
         <>
-            <BackBtn/>
+            <BackBtn url="/" name="Hjem"/>
             <h1>Buzzwords</h1>
             <p>Vil du bli en skikkelig "besserwisser" på nye teknlogoier? Ingen problem. Her får du kortversjonene du kan briefe med i møter og middagsselskap.</p>
             {buzzwords.status === ConnectionStatus.LOADING  && onLoading()}

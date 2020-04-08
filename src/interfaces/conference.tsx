@@ -1,16 +1,12 @@
 interface Conference {
-    id: number,
-    conferenceName: string,
-    country: string,
-    city: string,
-    startDate: Date,
-    endDate: Date,
-    month: string, 
-    price: string,
-    tags: string[],
-    link: string,
-    description: string
+    Id: number,
+    Name: string,
+    Description: string,
+    City: string,
+    Country: string,
+    StartDate: string,
+    EndDate: string, 
+    URL: string
 }
 
 export default Conference
-// todo change this!
