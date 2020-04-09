@@ -13,4 +13,8 @@ const onError = () => {
     return (<div className="error">Error!</div>)
 }
 
-export {onLoading, onError};
+const notFound = () => {
+    return (<div className="notfound">Oisann! Vi fant ingenting!</div>)
+}
+
+export {onLoading, notFound, onError};

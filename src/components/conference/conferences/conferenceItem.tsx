@@ -2,14 +2,12 @@ import React, {useState} from 'react';
 import {Collapse} from 'react-bootstrap';
 import Conference from '../../../interfaces/conference';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {months, days} from '../../../utility/datetime';
 import {faChevronUp, faChevronDown, faMapMarkerAlt, faCalendarAlt, faClock} from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
     conference: Conference
 }
-
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'];
-const days = ['søn', 'man', 'tir', 'ons', 'tor', 'fre', 'lør'];
 
 const formatDays = (start: string, end: string) => {
     const startDate = new Date(start);
@@ -20,7 +18,8 @@ const formatDays = (start: string, end: string) => {
     } else {
         const startDay: number = startDate.getDay();
         const endDay: number = endDate.getDay();
-        return (<>{days[startDay]} - {days[endDay]}</>)
+        const numberOfDays = (Math.floor((endDate.getTime() - startDate.getTime())/(1000*60*60*24))) + 1;
+        return (<>{`${days[startDay]} - ${days[endDay]} (${numberOfDays} dager)`}</>)
     }
 }
 
@@ -34,7 +33,6 @@ const formatMonthYear = (start: string) => {
 const ConferenceItem = (props: Props) => {
     const [open, setOpen] = useState(false);
     const {conference} = props;
-
     return (
         <button className="conference-item" onClick={() => setOpen(!open)} aria-controls="conference-item" aria-expanded={open}>
             <span className="conference-head">

@@ -4,18 +4,17 @@ import {getConferences, getConferencesFromToday} from './conferenceService';
 import Conference from '../../../interfaces/conference';
 import ConferenceItem from './conferenceItem';
 import SearchForm from './searchForm';
-import {onLoading, onError} from '../../shared/serviceResponses';
+import {onLoading, notFound, onError} from '../../shared/serviceResponses';
 import {Service, ConnectionStatus} from '../../../utility/service';
 import '../../../styles/conference.scss';
-
 
 const onSuccess = (conferences: Conference[]) => {
     return (
         <>
             {
-               conferences.length ? 
+               conferences.length > 0 ? 
                conferences.map((c: Conference, i: number) => (<ConferenceItem conference={c} key={i}/>)) :
-               onError() 
+               notFound() 
             }
         </>
     )
@@ -34,7 +33,7 @@ const ConferenceList = () => {
         <>
             <BackBtn url="/conferences" name="Konferanser"/>
             <h1>Søk i konferanser</h1>
-            <SearchForm/>
+            <SearchForm showOnlyFutureConfs={showOnlyFutureConfs} searchResponse={(c: Service<Conference[]>) => setConferences(c)}/>
             <label className="conference-checkbox-wrapper">
                 <input className="conference-checkbox" type="checkbox" aria-label="Checkbox for following text input" checked={showOnlyFutureConfs} onChange={() => setShowOnlyFutureConfs(!showOnlyFutureConfs)} />
                 <span className="conference-checkbox-label"> Vis kun fremtidige konferanser. </span>
