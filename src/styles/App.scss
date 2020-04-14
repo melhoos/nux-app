@@ -37,3 +37,18 @@ input[type='text'] {
   box-shadow: 0 0 5px lightgrey;
   margin-top: 0.5rem;
 }
+
+.navbar {
+  .navbar-brand {
+    img {
+      height: auto;
+      width: 5rem;
+      margin-left: 2rem;
+    }
+  }
+  .navbar-collapse{
+    .mr-auto.navbar-nav {
+      margin-left: 2rem;
+    }
+  }
+}
