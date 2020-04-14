@@ -27,16 +27,6 @@ p {
   font-family: 'ApexNew';
   font-size: $pFontSize;
 }
- 
-input[type='text'] {
-  width: 80vw;
-  padding: 16px;
-  font-size: $pFontSize;
-  line-height: 1em;
-  border: none;
-  box-shadow: 0 0 5px lightgrey;
-  margin-top: 0.5rem;
-}
 
 .navbar {
   .navbar-brand {
