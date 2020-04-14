@@ -1,8 +1,9 @@
 import React from 'react';
 import AboutWrapper from './about/aboutWrapper';
-import ConferenceWrapper from './conference/conferenceWrapper';
-import ConferenceList from './conference/conferences/conferenceList';
-import FeedbackWrapper from './conference/feedback/feedbackWrapper';
+import ConferenceWrapper from './conferenecsAndCourses/conferenecsAndCoursesWrapper';
+import ConferenceList from './conferenecsAndCourses/conferences/conferenceList';
+import FeedbackWrapper from './conferenecsAndCourses/feedback/feedbackWrapper';
+import CoursesWrapper from './conferenecsAndCourses/courses/coursesWrapper';
 import BuzzwordWrapper from './buzzword/buzzwordWrapper';
 import InspirationWrapper from './inspiration/inspirationWrapper';
 import HomeWrapper from './home/homeWrapper';
@@ -15,9 +16,10 @@ const ContentWrapper = () => {
         <div className="content">
             <Router>
                 <Switch>
-                    <Route path="/conferences/items" component={ConferenceList} />
-                    <Route path="/conferences/feedback" component={FeedbackWrapper} />
-                    <Route path="/conferences" component={ConferenceWrapper} />
+                    <Route path="/conferenecs-and-courses/confs" component={ConferenceList} />
+                    <Route path="/conferenecs-and-courses/feedback" component={FeedbackWrapper} />
+                    <Route path="/conferenecs-and-courses/courses" component={CoursesWrapper} />
+                    <Route path="/conferenecs-and-courses" component={ConferenceWrapper} />
                     <Route path="/buzzwords" component={BuzzwordWrapper} />
                     <Route path="/inspiration" component={InspirationWrapper} />
                     <Route path="/about" component={AboutWrapper} />

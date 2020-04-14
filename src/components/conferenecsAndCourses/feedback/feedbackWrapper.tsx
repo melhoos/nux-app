@@ -6,7 +6,7 @@ import BackBtn from '../../shared/backBtn';
 const FeedbackWrapper = () => {
     return (
         <>
-            <BackBtn url="/conferences" name="Konferanser"/>
+            <BackBtn url="/conferenecs-and-courses" name="Konferanser og kurs"/>
             <h1>Kommer snart!</h1>
         </>
     )

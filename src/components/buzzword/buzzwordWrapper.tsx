@@ -23,7 +23,7 @@ const BuzzwordWrapper = () => {
     return (
         <>
             <BackBtn url="/" name="Hjem"/>
-            <h1>Buzzwords</h1>
+            <h1>Faguttrykk</h1>
             <p>Vil du bli en skikkelig "besserwisser" på nye teknlogoier? Ingen problem. Her får du kortversjonene du kan briefe med i møter og middagsselskap.</p>
             {buzzwords.status === ConnectionStatus.LOADING  && onLoading()}
             {buzzwords.status === ConnectionStatus.SUCCESS && onSuccess(buzzwords.payload)} 

@@ -15,8 +15,8 @@ interface Page {
 const Pages: Page[] = [
     {
         type: PageType.Conferences,
-        url: "/conferences",
-        name: "Konferanser"
+        url: "/conferenecs-and-courses",
+        name: "Konferanser og kurs"
     },
     {
         type: PageType.Buzzwords,

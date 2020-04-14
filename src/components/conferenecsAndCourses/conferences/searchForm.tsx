@@ -18,7 +18,7 @@ const findYear = (searchValues: string[]) => {
 
 const findMonth = (searchValues: string[]) => {
     const possibleMonths: string[] = [...months, ...monthsLongName];
-    return searchValues.find((searchWord: string) => possibleMonths.includes(searchWord) )
+    return searchValues.find((searchWord: string) => possibleMonths.includes(searchWord.toLowerCase()) )
 }
 
 

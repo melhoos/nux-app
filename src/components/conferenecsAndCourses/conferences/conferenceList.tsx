@@ -31,7 +31,7 @@ const ConferenceList = () => {
 
     return (
         <>
-            <BackBtn url="/conferences" name="Konferanser"/>
+            <BackBtn url="/conferenecs-and-courses" name="Konferanser og kurs"/>
             <h1>Søk i konferanser</h1>
             <SearchForm showOnlyFutureConfs={showOnlyFutureConfs} searchResponse={(c: Service<Conference[]>) => setConferences(c)}/>
             <label className="conference-checkbox-wrapper">
