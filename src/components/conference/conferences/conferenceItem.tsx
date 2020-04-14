@@ -40,9 +40,7 @@ const ConferenceItem = (props: Props) => {
                 <p className="conference-location"><FontAwesomeIcon icon={faMapMarkerAlt} className="conference-icon"/> {conference.City}, {conference.Country} </p>
                 <p className="conference-month-year"><FontAwesomeIcon icon={faCalendarAlt} className="conference-icon"/> {formatMonthYear(conference.StartDate)} </p>
                 <p className="conference-days"><FontAwesomeIcon icon={faClock} className="conference-icon"/> {formatDays(conference.StartDate, conference.EndDate)} </p>
-                <p className="chevron-icon">
-                    <FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} />
-                </p>
+                <p className="chevron-icon"> <FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} /></p>
             </span>
             <Collapse in={open}>
                 <div id="conference-item">
