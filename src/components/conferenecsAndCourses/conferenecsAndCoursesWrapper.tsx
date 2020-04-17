@@ -19,7 +19,7 @@ const ConferenceWrapper = () => {
             </a>
             <a className="page-link" href={"/conferenecs-and-courses/feedback"}>
                 <FontAwesomeIcon icon={faHeart}/>
-                <span className="page-link-name">{"Skriv en tilbakemedling fra konferanse"}</span>
+                <span className="page-link-name">{"Skriv en tilbakemedling fra konferanse eller kurs"}</span>
             </a>
         </>
     )
