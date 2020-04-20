@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nux
+  namespace: marianne-playground
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  rules:
+    - host: nux.mad.itera.no
+      http:
+        paths:
+          - backend:
+              serviceName: nux
+              servicePort: 8080
+            path: /
